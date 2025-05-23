@@ -1,0 +1,168 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
+  color: #e0e0e0;
+}
+
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Footer */
+.Header, .Footer {
+  background: #2c2c3e;
+  color: #c3c8ff;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* NavBar */
+.Nav {
+  background: #111827;
+  border-bottom: 1px solid #374151;
+}
+
+.Nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.Nav li a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.Nav li a:hover {
+  background: #1f2937;
+  color: #8ab4f8;
+}
+
+/* Main Content Area */
+.Main {
+  flex: 1;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #1f1f2f, #252537);
+}
+
+/* Page Containers */
+.Home, .About, .Missing, .Posts {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Section Headings */
+h2 {
+  color: #a5b4fc;
+  margin-bottom: 1rem;
+}
+
+/* Forms and Inputs */
+.postForm, .searchInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.postForm input,
+.postForm textarea,
+.searchInput {
+  width: 90%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #444;
+  background: rgba(255, 255, 255, 0.05);
+  color: #e5e7eb;
+  backdrop-filter: blur(8px);
+  transition: border 0.3s ease;
+}
+
+.postForm input::placeholder,
+.postForm textarea::placeholder,
+.searchInput::placeholder {
+  color: #aaa;
+}
+
+.postForm input:focus,
+.postForm textarea:focus,
+.searchInput:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Button Styles */
+.postForm button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #6366f1;
+  transition: all 0.3s ease;
+}
+
+.postForm button:hover {
+  background: #4f46e5;
+}
+
+/* Post Card */
+.postCard {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1.25rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  border: 1px solid #444;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Edit and Delete Buttons */
+.editBtn, .deleteBtn {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.editBtn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Responsive Nav */
+@media (max-width: 600px) {
+  .Nav ul {
+    flex-direction: column;
+  }
+}
