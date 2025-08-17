@@ -15,7 +15,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `json server`
-run json-server --watch db.json --port 3001
+npx json-server --watch db.json --port 3001
 
 ### `npm test`
 
